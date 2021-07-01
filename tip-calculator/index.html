@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tip Calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="tip_calculator.css">
+	<script src="tip_calculator.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<h1>Tip Calculator</h1>
+		<h3>JavaScript</h3>
+		<p class="description">
+			This is an app that calculates the amount owed in tips based on
+			the quality of the service received and the number of people sharing
+			the bill.<br>
+		</p>
+		<a href="#glass" type="button" class="btn">Try it out!</a>
+	</div>
+	<div id="wrapper">
+		<div class="custom-shape-divider-top-1624752433">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+			</svg>
+		</div>
+		<div class="glass-container" id="glass">
+			<form name="tip_calculator">
+				<p>How much was your bill?</p>
+				<input id="bill_amt" type="text" placeholder="Bill Amount" size="30"></p>
+				<span id="billAmt_error"></span> </p>
+
+				<p>How much was your service?</p>
+				<p>
+					<select id="service_qual">
+						<option disabled selected value="0">-- Choose an Option --</option>
+						<option value="0.3">30% - Outstanding</option>
+						<option value="0.2">20% - Good</option>
+						<option value="0.15">15% - Okay</option>
+						<option value="0.1">10% - Bad</option>
+						<option value="0.05">5% - Terrible</option>
+					</select>
+				</p>
+				<p>How many people are sharing the bill?</p>
+				<input id="ppl_amt" type="text" placeholder="Number of People" size="30">
+				<span id="pplAmt_error"></span>
+				<button type="button" id="calculate">Calculate</button>
+				<br>
+				<p id="msg"></p>
+			</form>
+		</div>
+		<div class="custom-shape-divider-bottom-1624757062">
+    		<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        		<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    		</svg>
+		</div>
+	</div>
+ <!-- <footer>
+    Copyright &copy; 2020 Lizmery Vigil <br>
+    <a href="mailto:lizmery@vigil.com">l.vigil096@gmail.com</a>
+</footer> -->
+</body>
+</html>
